@@ -8,7 +8,7 @@ const pluginName = 'gulp-typed-css-modules';
 module.exports = options=>{
     options = options || {};
 
-    const DtsCreator = options.ctm || require('typed-css-modules');
+    const DtsCreator = options.tcm || require('typed-css-modules');
 
     const creator = new DtsCreator(options);
 

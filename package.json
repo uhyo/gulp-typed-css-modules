@@ -4,7 +4,7 @@
   "description": "Gulp plugin for typed-css-modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "gulp",
@@ -17,5 +17,10 @@
     "gulp-util": "^3.0.7",
     "through2": "^2.0.3",
     "typed-css-modules": "^0.1.13"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "mocha": "^3.2.0",
+    "vinyl": "^2.0.1"
   }
 }
