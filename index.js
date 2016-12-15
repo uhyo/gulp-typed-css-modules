@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const through2 = require('through2');
 const gutil = require('gulp-util');
@@ -54,11 +56,11 @@ module.exports = options=>{
     });
 };
 
-function showWarning(file, ...err){
-    gutil.log(gutil.colors.cyan(pluginName), gutil.colors.yellow('Warning'), gutil.colors.gray(file), ...err);
+function showWarning(file, err){
+    gutil.log(gutil.colors.cyan(pluginName), gutil.colors.yellow('Warning'), gutil.colors.gray(file), err);
 }
-function showError(...err){
-    gutil.log(gutil.colors.cyan(pluginName), gutil.colors.red('Error'), gutil.colors.gray(file), ...err);
+function showError(file, err){
+    gutil.log(gutil.colors.cyan(pluginName), gutil.colors.red('Error'), gutil.colors.gray(file), err);
 }
 
 function runtcm(filepath, creator, content, options){
