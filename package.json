@@ -1,0 +1,21 @@
+{
+  "name": "gulp-typed-css-modules",
+  "version": "1.0.0",
+  "description": "Gulp plugin for typed-css-modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "typed-css-modules"
+  ],
+  "author": "uhyo",
+  "license": "MIT",
+  "dependencies": {
+    "bufferstreams": "^1.1.1",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.3",
+    "typed-css-modules": "^0.1.13"
+  }
+}
