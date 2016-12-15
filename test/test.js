@@ -51,7 +51,7 @@ describe('gulp-typed-css-modules', ()=>{
                 assert(file.isBuffer());
 
                 // file extension is changed
-                assert.equal(file.path, path.join(__dirname, 'fake.d.ts'));
+                assert.equal(file.path, path.join(__dirname, 'fake.css.d.ts'));
 
                 // file content is properly passed
                 assert.equal(factory.buf, '.foo { display: none; }');
@@ -68,7 +68,7 @@ describe('gulp-typed-css-modules', ()=>{
 
             const inputStream = new PassThrough();
             const file = new Vinyl({
-                path: path.join(__dirname, 'fake.css'),
+                path: path.join(__dirname, 'sake.css'),
                 // contents: es.readArray(['.bar ', '{ displa', 'y: none;', ' }\n']),
                 contents: inputStream,
             });
@@ -92,7 +92,7 @@ describe('gulp-typed-css-modules', ()=>{
                 assert(file.isStream());
 
                 // file extension is changed
-                assert.equal(file.path, path.join(__dirname, 'fake.d.ts'));
+                assert.equal(file.path, path.join(__dirname, 'sake.css.d.ts'));
 
                 // the content of buffer is correct
                 file.contents.pipe(es.wait((err, data)=>{

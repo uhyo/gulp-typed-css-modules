@@ -14,7 +14,7 @@ module.exports = options=>{
 
     return through2.obj((file, encoding, callback)=>{
         const filepath = file.path;
-        const newpath = gutil.replaceExtension(filepath, '.d.ts');
+        const newpath = file.path + '.d.ts';
 
         file.path = newpath;
         if (file.isNull()){
