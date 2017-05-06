@@ -1,6 +1,6 @@
 # gulp-typed-css-modules
 
-This is a gulp plugin for me, that wraps [typed-css-modules](https://github.com/Quramy/typed-css-modules).
+This is a gulp plugin for me, which wraps [typed-css-modules](https://github.com/Quramy/typed-css-modules).
 
 ## Installation
 ```sh
@@ -24,7 +24,7 @@ gulp.task('tcm', function(){
 This will create `*.css.d.ts` files next to each `*.css` file.
 
 ### Providing `typed-css-modules`
-To use your own `typed-css-modules` instead of the built in one, do:
+To use your own `typed-css-modules` instead of the built-in one, do:
 
 ```js
 gulp_tcm({
@@ -36,10 +36,16 @@ gulp_tcm({
 - **quiet**: if true, suppress warning messages from `typed-css-modules`.
 - **tcm**: `typed-css-modules` module.
 
-Any other options are passed to `typed-css-modules` (`DtsCreator`).
+Any other option is passed to `typed-css-modules` (`DtsCreator`).
 
 ## Contributing
 welcome
+
+## Changelog
+*Note: All dates are in JST.*
+
+* **1.1.0** (2017-05-07): Update built-in `typed-css-modules` from `0.1.3` to `0.2.0`. (`f408d78`)
+* **1.0.0** (2016-12-15): The first version.
 
 ## License
 MIT
