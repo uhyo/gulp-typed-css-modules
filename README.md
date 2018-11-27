@@ -44,7 +44,10 @@ welcome
 ## Changelog
 *Note: All dates are in JST.*
 
-* **1.1.1** (2018-11-28): Update dependencies. (`00a607c')
+* **2.0.0** (2018-11-28):
+  * Updated dependencies. This includes potential breaking change of `typed-css-modules`. (`7b0efa3`)
+  * Dropped support of node < 6. (`99f8b62`)
+* **1.1.1** (2018-11-28): Updated dependencies. (`00a607c`)
 * **1.1.0** (2017-05-07): Update built-in `typed-css-modules` from `0.1.3` to `0.2.0`. (`f408d78`)
 * **1.0.0** (2016-12-15): The first version.
 
