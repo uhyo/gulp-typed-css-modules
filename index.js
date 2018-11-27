@@ -71,7 +71,7 @@ function runtcm(filepath, creator, content, options){
                 showWarning(filepath, mes);
             }
         }
-        return new Buffer(content.formatted);
+        return Buffer.from(content.formatted);
     })
     .catch(err=>{
         showError(filepath, err);

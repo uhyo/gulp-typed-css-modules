@@ -37,7 +37,7 @@ describe('gulp-typed-css-modules', ()=>{
 
             const file = new Vinyl({
                 path: path.join(__dirname, 'fake.css'),
-                contents: new Buffer('.foo { display: none; }'),
+                contents: Buffer.from('.foo { display: none; }'),
             });
 
             const factory = new FakeTCMFactory();
@@ -75,10 +75,10 @@ describe('gulp-typed-css-modules', ()=>{
                 contents: inputStream,
             });
 
-            inputStream.write(new Buffer('.bar '));
-            inputStream.write(new Buffer('{ displa'));
-            inputStream.write(new Buffer('y: none;'));
-            inputStream.write(new Buffer(' }\n'));
+            inputStream.write(Buffer.from('.bar '));
+            inputStream.write(Buffer.from('{ displa'));
+            inputStream.write(Buffer.from('y: none;'));
+            inputStream.write(Buffer.from(' }\n'));
             inputStream.end();
 
             const factory = new FakeTCMFactory();
