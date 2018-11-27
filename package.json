@@ -1,6 +1,6 @@
 {
   "name": "gulp-typed-css-modules",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Gulp plugin for typed-css-modules",
   "main": "index.js",
   "scripts": {
