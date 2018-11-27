@@ -44,6 +44,7 @@ welcome
 ## Changelog
 *Note: All dates are in JST.*
 
+* **2.0.1** (2018-11-28): Downgraded dependencies. (`c97db67`)
 * **2.0.0** (2018-11-28):
   * Updated dependencies. This includes potential breaking change of `typed-css-modules`. (`7b0efa3`)
   * Dropped support of node < 6. (`99f8b62`)
